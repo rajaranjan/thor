@@ -4,7 +4,8 @@ COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 #RUN ./mvnw dependency:go-offline
 COPY ./src ./src
-RUN ./mvnw clean install
+#RUN ./mvnw clean install
+RUN mvn clean install
 
 FROM eclipse-temurin:17-jre-jammy
 MAINTAINER sapient
