@@ -18,3 +18,6 @@ This is the backend api microservice for getting the standing of league. This is
 
 ## Pulling from docker hub and running
 - LINK : docker pull rajaranjans/sapient:thor
+
+## CI/CD pipeline
+Jenkins file is added. When we run jenkins job it pulls the code from github main branch, builds a docker image and push to docker hub.To keep it simple not added complete CI/CD thing like dev and prod environment. It can be setup.
